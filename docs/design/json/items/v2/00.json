@@ -1,0 +1,15 @@
+{
+    "_id": "",
+    "type_item": "",
+    "correct_awnser": "",
+    "area": ["math"],
+    "skill": ["a", "b", "c"],
+    "discipline": ["x"],
+    "content": ["y", "z"],
+    "bncc": "",
+    "description": "",
+    "announce": "",
+    "awnsers": [],
+    "comment": "",
+    "tags": []
+}

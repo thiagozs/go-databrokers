@@ -1,0 +1,48 @@
+{
+    "_id": 1,
+    "name": "conf_1",
+    "type": "t1",
+    "children": [{
+            "name": "xxxx",
+            "type": "t2"
+        }, {
+            "name": "yyyy",
+            "type": "t2"
+        }, {
+            "name": "zzzz",
+            "type": "t2",
+            "children": [{
+                "name": "eeee",
+                "type": "t4"
+            }, {
+                "name": "yyyy",
+                "type": "t4"
+            }, {
+                "name": "zzzz",
+                "type": "t4"
+            }]
+        },
+        {
+            "_id": 4,
+            "name": "zzzz",
+            "type": "t5"
+        },
+        {
+            "name": "zzzz",
+            "type": "t5",
+            "children": [{
+                "_id": 1,
+                "name": "eeee",
+                "type": "t7"
+            }, {
+                "_id": 2,
+                "name": "yyyy",
+                "type": "t7"
+            }, {
+                "_id": 3,
+                "name": "zzzz",
+                "type": "t7"
+            }]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "_id": "",
+    "type_item": "",
+    "correct_awnser": "",
+    "embed": [{
+            "name": "dirir carro",
+            "type": "habilidade",
+            "tag": ["carro", "dirigir"],
+            "_id": 123
+        },
+        {
+            "name": "velocidade",
+            "type": "conteudo",
+            "tag": ["aerodinamica", "catavento"],
+            "_id": 124
+        },
+        {
+            "name": "vento",
+            "type": "terra",
+            "tag": ["pedra", "agua"],
+            "_id": 125
+        }
+    ],
+    "bncc": "",
+    "description": "",
+    "announce": "",
+    "awnsers": [],
+    "comment": "",
+    "tags": []
+}
