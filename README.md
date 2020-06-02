@@ -4,12 +4,19 @@
 
 * Golang 1.14.1
 * Docker
-* Message Broker
-* Protocol
+* Message Broker (Mosquitto, EMQX, Kafka)
+* Producer/Consumer clients
+* Documentation
+
+## Inspiration
+
+Complexity test of running multiple brokers, code validation, technical feasibility, among other factors.
 
 ## Work flow design
 
-In progress.
+* Publish + Subscribe
+* Processing
+* Store
 
 ## Versioning and license
 

@@ -2,9 +2,9 @@
 
 ## Options for test
 
-* EMQX (poc done! ps: mqtt protocol)
-* Kafka (in progress...)
-* Mosquitto (poc done! ps: mqtt protocol)
+* EMQX ✔
+* Mosquitto ✔
+* Kafka ✔
 
 ## EMQX
 
@@ -38,10 +38,6 @@ cd _build/emqx/rel/emqx && ./bin/emqx console
 ./bin/emqx stop
 ```
 
-Pros:
-
-Cons:
-
 ## Mosquitto
 
 Repo : [https://github.com/eclipse/mosquitto](https://github.com/eclipse/mosquitto)
@@ -67,9 +63,38 @@ And to publish a message:
 mosquitto_pub -t 'test/topic' -m 'hello world'
 ```
 
-Pros:
+## Kafka
 
-Cons:
+Repo : [https://github.com/apache/kafka](https://github.com/apache/kafka)
+
+Start with docker composer. Just run `sudo docker-compose up` or deattached mode `sudo docker-compose up -d`
+
+```yml
+---
+version: '2'
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    network_mode: host
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 32181
+      ZOOKEEPER_TICK_TIME: 2000
+    extra_hosts:
+      - "moby:127.0.0.1"
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    network_mode: host
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: localhost:32181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:29092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    extra_hosts:
+      - "moby:127.0.0.1"
+```
 
 ## Versioning and license
 
